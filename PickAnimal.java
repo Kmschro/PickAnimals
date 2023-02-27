@@ -14,6 +14,9 @@ public class PickAnimal {
         {
             System.out.println("CAT ASCII ART HERE");
         }
-         
+        else 
+        {
+            System.out.println("Error, invalid input ");
+        }
 } 
 }
