@@ -16,10 +16,15 @@ public class PickAnimal {
             System.out.println("CAT ASCII ART HERE");
             System.out.println("   |\\__/,|   (`\\\n   |o o  |__ _)\n _.( T   )  `  /\n((_ `^--\' /_<  \\\n`` `-\'(((/  (((/");
         }
+        else if (animal == 3)
+        {
+            System.out.println("FISH ASCII ART HERE");
+            System.out.println("  ;,//;,    ,;/\n o:::::::;;///\n>::::::::;;\\\\\\\n  \'\'\\\\\\\\\\\'\" \';\\");
+        }
         else 
         {
-            while(animal != 1 || animal != 2) {
-                System.out.println("Error, invalid input, enter 1 for a dog image, or 2 for a cat image ");
+            while(animal != 1 || animal != 2 || animal != 3) {
+                System.out.println("Error, invalid input, enter 1 for a dog image, or 2 for a cat image, or 3 for a fish image ");
                 animal = inp.nextInt();
                 if (animal == 1 ) {
                     System.out.println("DOG ASCII ART HERE");
@@ -29,6 +34,11 @@ public class PickAnimal {
                 else if (animal == 2) {
                     System.out.println("CAT ASCII ART HERE");
                     System.out.println("   |\\__/,|   (`\\\n   |o o  |__ _)\n _.( T   )  `  /\n((_ `^--\' /_<  \\\n`` `-\'(((/  (((/");
+                    break;
+                }
+                else if (animal == 3) {
+                    System.out.println("FISH ASCII ART HERE");
+                    System.out.println("  ;,//;,    ,;/\n o:::::::;;///\n>::::::::;;\\\\\\\n  \'\'\\\\\\\\\\\'\" \';\\");
                     break;
                 }
             }
